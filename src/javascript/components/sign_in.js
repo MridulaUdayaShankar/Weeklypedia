@@ -1,6 +1,4 @@
 
-// Modularize this more, so that we can provide other html attributes as parameters
-//  (for merging the sign-in/sign-up modals into a single modal generating function)
 function signIn() {
   $('#app').html(`<!-- Button trigger modal -->
   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
