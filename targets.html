@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
         crossorigin="anonymous">
     <link rel="stylesheet" href="src/style/style.css">
+    <link rel="stylesheet" href="src/style/profilePage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker3.standalone.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -56,27 +57,19 @@
                         <form>
                             <!-- Input box for Email -->
                             <div class="form-group">
-                                <label for="inputEmail">Email address</label>
+                                <label for="inputEmail"></label>
                                 <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
                                 <small id="emailHelp" class="form-text text-muted"></small>
                             </div>
                             <!-- Input box for Password -->
                             <div class="form-group">
-                                <label for="inputPassword">Password</label>
+                                <label for="inputPassword"></label>
                                 <input type="password" class="form-control" id="inputPassword" placeholder="Password">
                             </div>
-                            <!-- Submit button -->
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                        
                         </form>
                     </div>
 
-                    <!-- google sign in -->
-                    <div class="g-signin2" data-onsuccess="onSignIn">
-                        <a href="src/others/googlebutton.png"></a>
-                    </div>
-                    <!-- Facebook sign in -->
-                    <div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false"
-                        data-auto-logout-link="false" data-use-continue-as="false"></div>
                     <!-- Modal footer containing cancel and submit buttons -->
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
@@ -99,25 +92,17 @@
                     <div class="modal-body">
 
                         <form>
-                            <!-- Input box for Name -->
-                            <div class="form-group">
-                                <label for="inputEmail">Enter full name</label>
-                                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter full Name">
-                                <small id="emailHelp" class="form-text text-muted"></small>
-                            </div>
                             <!-- Input box for Email -->
                             <div class="form-group">
-                                <label for="inputEmail">Email address</label>
+                                <label for="inputEmail"></label>
                                 <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
                                 <small id="emailHelp" class="form-text text-muted"></small>
                             </div>
                             <!-- Input box for Password -->
                             <div class="form-group">
-                                <label for="inputPassword">Password</label>
+                                <label for="inputPassword"></label>
                                 <input type="password" class="form-control" id="inputPassword" placeholder="Password">
                             </div>
-                            <!-- Submit button -->
-                            <button type="submit" class="btn btn-primary">Submit</button>
                         </form>
                     </div>
                     <!-- Modal footer containing cancel and submit buttons -->
@@ -135,33 +120,65 @@
 
         <!-- <div class="row-fluid"> -->
         <!-- Eventbrite -->
-        <button type="button" class="btn btn-warning" data-prefNum>Performing and Visual Arts</button>
-        <button type="button" class="btn btn-warning" data-prefNum>Business and Professional</button>
-        <button type="button" class="btn btn-warning" data-prefNum>Health and Wellness</button>
-        <button type="button" class="btn btn-warning" data-prefNum>Family and Education</button>
-        <button type="button" class="btn btn-warning" data-prefNum>Science and Technology</button>
-        <button type="button" class="btn btn-warning" data-prefNum>Community and Culture</button>
-        <button type="button" class="btn btn-warning" data-prefNum>Hobbies and Special Interests</button>
-        <button type="button" class="btn btn-warning" data-prefNum>Film, Media and Entertainment</button>
-        <button type="button" class="btn btn-warning" data-prefNum>Fashion and Beauty</button>
-        <button type="button" class="btn btn-warning" data-prefNum>Sports and Fitness</button>
+        <!-- <button type="button" class="btn btn-warning" data-prefNum="">Performing and Visual Arts</button>
+        <button type="button" class="btn btn-warning" data-prefNum="">Business and Professional</button>
+        <button type="button" class="btn btn-warning" data-prefNum="">Health and Wellness</button>
+        <button type="button" class="btn btn-warning" data-prefNum="">Family and Education</button>
+        <button type="button" class="btn btn-warning" data-prefNum="">Science and Technology</button>
+        <button type="button" class="btn btn-warning" data-prefNum="">Community and Culture</button>
+        <button type="button" class="btn btn-warning" data-prefNum="">Hobbies and Special Interests</button>
+        <button type="button" class="btn btn-warning" data-prefNum="">Film, Media and Entertainment</button>
+        <button type="button" class="btn btn-warning" data-prefNum="">Fashion and Beauty</button>
+        <button type="button" class="btn btn-warning" data-prefNum="">Sports and Fitness</button> -->
 
 
-        <!-- HikingProject -->
-        <button type="button" class="btn btn-success" data-trailById>Find Hiking Trails</button>
 
         <!-- layout for plan page -->
         <!-- Calendar -->
-        <div class="row">
+        <!-- <div class="row" id="calendarDiv">
             <div class="col-md-4">
                 <div id="datepicker" data-date="01/01/2018"></div>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-6">
                 Plan displayed Here!!
             </div>
         </div>
-        <button type="submit" class="btn btn-primary">Accept Plan</button>
-        <button type="button" class="btn btn-primary">New Plan</button>
+        <div class="row">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-6">
+                <button type="submit" class="btn btn-primary">Accept Plan</button>
+                <button type="button" class="btn btn-primary">New Plan</button>
+            </div>
+        </div>
+    </div> -->
+
+        <!-- Profile page -->
+        <div class="row">
+            <div class="col-md-8">
+                <h2>Profile Settings</h2>
+                <form>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input class="full_name" type="text" name="full-name"/>
+                    </div>
+                    <div class="field">
+                        <label for="password">Password</label>
+                        <input class="full_name" type="text" name="full-name"/>
+                    </div>
+                    <div class="field">
+                            <label for="preferences">Change Preferences</label>
+                            <button type="button" class="btn btn-warning">Go to Preferences</button>
+                    </div>
+                </form>
+                <a href="#">
+                    <button class="btn btn-primary" type="submit" name="button">Save Changes</button>
+                </a>
+                <a href="#">
+                    <button class="btn btn-secondary" type="cancel" name="button">Cancel</button>
+                </a>
+            </div>
+        </div>
     </div>
 
     <footer>
