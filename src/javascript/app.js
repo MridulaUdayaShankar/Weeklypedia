@@ -1,15 +1,15 @@
 
-// $(document).ready(function() {
-//     $('#bg-video').videoBackground("Adobe_Spark_Video_1.gif");
-//   });
+$(document).ready(function() {
+    $('#bg-video').videoBackground("Adobe_Spark_Video_1.gif");
+  });
   
-//   var settings = {
-//     autoplay: 'autoplay',
-//     muted: 'muted',
-//     loop: 'loop',
-//     fit: 'fill', // changes the object-fit property of the video
-//     src: 'Adobe_Spark_Video_1.gif' // url to video
-//   }
+  var settings = {
+    autoplay: 'autoplay',
+    muted: 'muted',
+    loop: 'loop',
+    fit: 'fill', // changes the object-fit property of the video
+    src: 'Adobe_Spark_Video_1.gif' // url to video
+  };
 // USER STORY
 // User lands on home page this should our base html with sign-in/sign up button options in the nav.
 // button(somewhere in nav, `html elements`)
@@ -29,8 +29,8 @@
 // Automatically render modals to the app container, since they remain hidden until one of the nav buttons trigger
 // them to appear/ user actions cause them to disappear.
 
- signIn();  // note: the signIn() and signUp() can probably be merged into a single modal generator
-// signUp();         g0I (Nick) can show an example of how that is done.
+//  signIn();  // note: the signIn() and signUp() can probably be merged into a single modal generator
+//signUp();    //     g0I (Nick) can show an example of how that is done.
 //interestButtonHolder();
 
 // On sign-up, a user's login info is saved to firebase authentication, afterwards, they are presented the interests-picking view.
@@ -41,14 +41,24 @@
 // createButton() equal to the number of interests to pick from and target the generic container to put them in
 // note: we put them all in a container, so that we can have them all simultaneously animate into view to the user.
 
-// if(true/*User already has preferences*/) {
-//   calendar();
-//   // calendar calls yourPlan(), which calls
-//   $(document).on('click','#new-plan',function(e) {
-//     console.log('I was clicked!');
-//   })
-// }
+if(true/*User already has preferences*/) {
+  calendar();
+  // calendar calls yourPlan(), which calls
+  $(document).on('click','#new-plan',function(e) {
+    console.log('I was clicked!');
+  });
+}
+
+if (true){
+    signUp();
+}
 
 
-// interestButtonHolder();
+if (true/*if signUp is done*/){
+    interestButtonHolder();
+}
+
+
+
+
 
