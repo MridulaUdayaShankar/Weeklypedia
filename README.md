@@ -29,6 +29,10 @@ Hosted on [GitHub pages](https://unobtainiumrock.github.io/Weeklypedia/).
 * **Mridula**
 * **Niyati**
 
+## Project Description
+A tool for auto generating your weekend-plans, based on your interests, the weather and events within a 10 mile radius. 
+
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
